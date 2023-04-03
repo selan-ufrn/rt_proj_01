@@ -114,7 +114,7 @@ int render() {
     auto w = camera.film.width(); // Retrieve the image dimensions in pixels.
     auto h = camera.film.height();
     // Traverse all pixels to shoot rays from.
-    for ( int j = 0 ; j < ; j++ ) {
+    for ( int j = 0 ; j < h ; j++ ) {
         for( int i = 0 ; i < w ; i++ ) {
             // Not shooting rays just yet; so let us sample the background.
             auto color = background.sample( float(i)/float(w), float(j)/float(h) ); // get background color.
